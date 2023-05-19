@@ -141,7 +141,7 @@
                <p class="subtitle is-3 has-text-centered">
                   Dissertation
                </p>
-               <p class="is-size-6 has-text-centered block" id="note">Évaluation sur 70, la note sur 20 vaut : <b>(note*20)/70</b></p>
+               <p class="is-size-6 has-text-centered block" id="note">Évaluation sur 65, la note sur 20 vaut : <b>(note*20)/65</b></p>
                <div class="block">
                    <span class="js__action--print" id="print">
                        🖨️
