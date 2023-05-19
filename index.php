@@ -377,7 +377,7 @@
     font-size: small;
     color: white;
 ">
-          <p>Template par <a href="https://github.com/eyssette/ressources-generales-enseignement-philosophie/blob/master/checklist.html">Cédric Eysette </a></p>
+          <p>Template par <a href="https://github.com/eyssette/ressources-generales-enseignement-philosophie/blob/master/checklist.html">Cédric Eyssette </a></p>
       </footer>
    </body>
 </html>
