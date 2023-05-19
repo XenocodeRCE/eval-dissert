@@ -1,4 +1,5 @@
-
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <!DOCTYPE html>
 <html class="has-background-grey-dark" data-mci-setup="true">
    <head>
@@ -7,8 +8,6 @@
       <title>Fiche d'évaluation - Dissertation</title>
       <link rel="stylesheet" href="bulma.min.css">
       <link rel="stylesheet" href="documentation.css">
-	  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
       <style>
          #mainContent {
          min-width: 800px !important;
@@ -144,6 +143,9 @@
                </p>
                <p class="is-size-6 has-text-centered block" id="note">Évaluation sur 70, la note sur 20 vaut : <b>(note*20)/70</b></p>
                <div class="block">
+                   <span class="js__action--print" id="print">
+                       🖨️
+                   </span>
                </div>
                <h2 class="title is-3 mt-6">📜 INTRODUCTION</h2>
                <div class="box p-5">
@@ -153,7 +155,7 @@
                         <label for="switchExample1a1">
                            Le travail contient une amorce
                            <div class="rating left"  id="1">  <div class="stars right" style="font-size: medium;">    <a class="star"  id="1"></a>    <a class="star"  id="2"></a>    <a class="star"  id="3"></a>    <a class="star"  id="4"></a>    <a class="star"  id="5"></a>  </div></div>
-                           <p class="has-text-grey" style="margin-left: inherit;">On retrouve une présentation concrète du paradoxe, exemplifié à partir de l'histoire ou des sciences ou de la culture littéraire qui amène petit à petit au problème du sujet
+                           <p class="has-text-grey" style="margin-left: inherit;text-align: justify;">On retrouve une présentation concrète du paradoxe, exemplifié à partir de l'histoire ou des sciences ou de la culture littéraire qui amène petit à petit au problème du sujet
                               <input class="input is-small has-background-white-bis" type="text" placeholder="" id="input-text-1a1">
                            </p>
                         </label>
@@ -166,7 +168,7 @@
                         <label for="switchExample1a2">
                            Le travail contient des tentatives de définitions
                            <div class="rating left"  id="2">  <div class="stars right" style="font-size: medium;">    <a class="star"  id="1"></a>    <a class="star"  id="2"></a>    <a class="star"  id="3"></a>    <a class="star"  id="4"></a>    <a class="star"  id="5"></a>  </div></div>
-                           <p class="has-text-grey" style="margin-left: inherit;">On retrouve des définitions claires, qui apportent des distinctions utiles à l'analyse du sujet. Les termes ne sont pas définis isolément, ni les définitions listées les unes à la suite des autres.<input class="input is-small has-background-white-bis" type="text" placeholder="" id="input-text-1a2">
+                           <p class="has-text-grey" style="margin-left: inherit;text-align: justify;">On retrouve des définitions claires, qui apportent des distinctions utiles à l'analyse du sujet. Les termes ne sont pas définis isolément, ni les définitions listées les unes à la suite des autres.<input class="input is-small has-background-white-bis" type="text" placeholder="" id="input-text-1a2">
                            </p>
                         </label>
                      </div>
@@ -178,7 +180,7 @@
                         <label for="switchExample1a3">
                            Il y a explicitation du présupposé du sujet
                            <div class="rating left"   id="3">  <div class="stars right" style="font-size: medium;">    <a class="star"  id="1"></a>    <a class="star"  id="2"></a>    <a class="star"  id="3"></a>    <a class="star"  id="4"></a>    <a class="star"  id="5"></a>  </div></div>
-                           <p class="has-text-grey" style="margin-left: inherit;">Le présupposé est explicité clairement, des alternatives sont énoncées et les enjeux sont soulevés <input class="input is-small has-background-white-bis" type="text" placeholder="" id="input-text-1a3">
+                           <p class="has-text-grey" style="margin-left: inherit;text-align: justify;">Le présupposé est explicité clairement, des alternatives sont énoncées et les enjeux sont soulevés <input class="input is-small has-background-white-bis" type="text" placeholder="" id="input-text-1a3">
                            </p>
                         </label>
                      </div>
@@ -190,7 +192,7 @@
                         <label for="switchExample1b1">
                            Le sujet du devoir est problématisé
                            <div class="rating left"   id="4">  <div class="stars right" style="font-size: medium;">    <a class="star"  id="1"></a>    <a class="star"  id="2"></a>    <a class="star"  id="3"></a>    <a class="star"  id="4"></a>    <a class="star"  id="5"></a>  </div></div>
-                           <p class="has-text-grey" style="margin-left: inherit;">La problématisation est un moment dans l'introduction qui arrive à provoquer chez le lecteur une tension réelle entre les alternatives proposées<input class="input is-small has-background-white-bis" type="text" placeholder="" id="input-text-1b1">
+                           <p class="has-text-grey" style="margin-left: inherit;text-align: justify;">La problématisation est un moment dans l'introduction qui arrive à provoquer chez le lecteur une tension réelle entre les alternatives proposées<input class="input is-small has-background-white-bis" type="text" placeholder="" id="input-text-1b1">
                            </p>
                         </label>
                      </div>
@@ -201,7 +203,7 @@
                         <label for="switchExample1b2">
                            Il y a une problématique
                            <div class="rating left"   id="5">  <div class="stars right" style="font-size: medium;">    <a class="star"  id="1"></a>    <a class="star"  id="2"></a>    <a class="star"  id="3"></a>    <a class="star"  id="4"></a>    <a class="star"  id="5"></a>  </div></div>
-                           <p class="has-text-grey" style="margin-left: inherit;">La problématique vient conclure la problématisation, sous forme de question en X ou bien Y, où la proposition X est vraie seule, la proposition Y est vraie seule, mais les deux en même temps semblent incompatibles <input class="input is-small has-background-white-bis" type="text" placeholder="" id="input-text-1b2">
+                           <p class="has-text-grey" style="margin-left: inherit;text-align: justify;">La problématique vient conclure la problématisation, sous forme de question en X ou bien Y, où la proposition X est vraie seule, la proposition Y est vraie seule, mais les deux en même temps semblent incompatibles <input class="input is-small has-background-white-bis" type="text" placeholder="" id="input-text-1b2">
                            </p>
                         </label>
                      </div>
@@ -210,24 +212,13 @@
 				  <div class="field columns">
                      <div class="column is-11">
                         <label for="switchExample1b3">
-                           Le plan est travaillé
+                           Le plan est travaillé et son annonce détaillée
                            <div class="rating left"  id="6">  <div class="stars right" style="font-size: medium;">    <a class="star"  id="1"></a>    <a class="star"  id="2"></a>    <a class="star"  id="3"></a>    <a class="star"  id="4"></a>    <a class="star"  id="5"></a>  </div></div>
-                           <p class="has-text-grey" style="margin-left: inherit;">Le plan doit rendre compte d'une argumentation claire et articulée. Sans disposer du brouillon, la seule lecture permet de comprendre toute la structure du devoir de façon synthétique <input class="input is-small has-background-white-bis" type="text" placeholder="" id="input-text-1b3">
+                           <p class="has-text-grey" style="margin-left: inherit;text-align: justify;">Le plan doit rendre compte d'une argumentation claire et articulée. Sans disposer du brouillon, la seule lecture permet de comprendre toute la structure du devoir de façon synthétique <input class="input is-small has-background-white-bis" type="text" placeholder="" id="input-text-1b3">
                            </p>
                         </label>
                      </div>
                      <div class="column"><button class="button is-white has-text-grey" id="button-1b3" aria-pressed="false">＋</button></div>
-                  </div>
-				  <div class="field columns">
-                     <div class="column is-11">
-                        <label for="switchExample1b4">
-                           Le plan est détaillé.
-                           <div class="rating left"  id="7">  <div class="stars right" style="font-size: medium;">    <a class="star"  id="1"></a>    <a class="star"  id="2"></a>    <a class="star"  id="3"></a>    <a class="star"  id="4"></a>    <a class="star"  id="5"></a>  </div></div>
-                           <p class="has-text-grey" style="margin-left: inherit;">À chaque annonce de la thèse principale, on doit trouver un certain nombre de détails permettant la pleine compréhension des gros traits argumentatifs du devoir <input class="input is-small has-background-white-bis" type="text" placeholder="" id="input-text-1b4">
-                           </p>
-                        </label>
-                     </div>
-                     <div class="column"><button class="button is-white has-text-grey" id="button-1b4" aria-pressed="false">＋</button></div>
                   </div>
                </div>
 			   <h2 class="title is-3 mt-6">✍️ DÉVELOPPEMENT</h2>
@@ -237,7 +228,7 @@
                         <label for="switchExample2a1">
                            Le plan est dialectique
                            <div class="rating left"  id="8">  <div class="stars right" style="font-size: medium;">    <a class="star"  id="1"></a>    <a class="star"  id="2"></a>    <a class="star"  id="3"></a>    <a class="star"  id="4"></a>    <a class="star"  id="5"></a>  </div></div>
-                           <p class="has-text-grey" style="margin-left: inherit;">Le devoir contient trois thèses qui ne se répètent pas, qui ne se contredisent pas (ex: oui, non, ça dépend), qui rendent compte d'un cheminement dialectique<input class="input is-small has-background-white-bis" type="text" placeholder="" id="input-text-2a1">
+                           <p class="has-text-grey" style="margin-left: inherit;text-align: justify;">Le devoir contient trois thèses qui ne se répètent pas, qui ne se contredisent pas (ex: oui, non, ça dépend), qui rendent compte d'un cheminement dialectique<input class="input is-small has-background-white-bis" type="text" placeholder="" id="input-text-2a1">
                            </p>
                         </label>
                      </div>
@@ -249,7 +240,7 @@
                         <label for="switchExample2a2">
                            Les thèses sont structurées
                            <div class="rating left"  id="9">  <div class="stars right" style="font-size: medium;">    <a class="star"  id="1"></a>    <a class="star"  id="2"></a>    <a class="star"  id="3"></a>    <a class="star"  id="4"></a>    <a class="star"  id="5"></a>  </div></div>
-                           <p class="has-text-grey" style="margin-left: inherit;">Les thèses sont annoncées clairement en début de chaque partie. L'annonce n'est pas un titre, mais une présentation de ce que l'on peut attendre de cette partie du devoir<input class="input is-small has-background-white-bis" type="text" placeholder="" id="input-text-2a2">
+                           <p class="has-text-grey" style="margin-left: inherit;text-align: justify;">Les thèses sont annoncées clairement en début de chaque partie. L'annonce n'est pas un titre, mais une présentation de ce que l'on peut attendre de cette partie du devoir<input class="input is-small has-background-white-bis" type="text" placeholder="" id="input-text-2a2">
                            </p>
                         </label>
                      </div>
@@ -261,7 +252,7 @@
                         <label for="switchExample2b0">
                            Le développement est soigné, sérieux et argumenté
                            <div class="rating left" id="10">  <div class="stars right" style="font-size: medium;">    <a class="star"  id="1"></a>    <a class="star"  id="2"></a>    <a class="star"  id="3"></a>    <a class="star"  id="4"></a>    <a class="star"  id="5"></a>  </div></div>
-                           <p class="has-text-grey" style="margin-left: inherit;">Chaque thèse est appuyée par des arguments logiques, des syllogismes, des analyses d'implications. Ces arguments ne sont pas réduits à des références ou des doctrines de philosophes, ni ne reposent sur des opinions ou n'invitent au relativisme<input class="input is-small has-background-white-bis" type="text" placeholder="" id="input-text-2b0">
+                           <p class="has-text-grey" style="margin-left: inherit;text-align: justify;">Chaque thèse est appuyée par de vrais arguments logiquement justifiés qui ne sont pas réduits à des références ou des doctrines de philosophes<input class="input is-small has-background-white-bis" type="text" placeholder="" id="input-text-2b0">
                            </p>
                         </label>
                      </div>
@@ -272,7 +263,7 @@
                         <label for="switchExample2b1">
                            Il y a des références
                            <div class="rating left"   id="11">  <div class="stars right" style="font-size: medium;">    <a class="star"  id="1"></a>    <a class="star"  id="2"></a>    <a class="star"  id="3"></a>    <a class="star"  id="4"></a>    <a class="star"  id="5"></a>  </div></div>
-                           <p class="has-text-grey" style="margin-left: inherit;">Il y a mobilisation de références utiles à l'analyse et l'élaboration d'une réponse. Les références ne sont pas confondues avec des exemples.<input class="input is-small has-background-white-bis" type="text" placeholder="" id="input-text-2b1">
+                           <p class="has-text-grey" style="margin-left: inherit;text-align: justify;">Il y a mobilisation de références utiles à l'analyse et l'élaboration d'une réponse. Les références ne sont pas confondues avec des exemples<input class="input is-small has-background-white-bis" type="text" placeholder="" id="input-text-2b1">
                            </p>
                         </label>
                      </div>
@@ -283,7 +274,7 @@
                         <label for="switchExample2b2">
                            Il y a des transitions
                            <div class="rating left"   id="12">  <div class="stars right" style="font-size: medium;">    <a class="star"  id="1"></a>    <a class="star"  id="2"></a>    <a class="star"  id="3"></a>    <a class="star"  id="4"></a>    <a class="star"  id="5"></a>  </div></div>
-                           <p class="has-text-grey" style="margin-left: inherit;">Il y a une transition entre chaque grande thèse, possiblement à la fin, qui synthétise la partie précédente et annonce la partie suivante<input class="input is-small has-background-white-bis" type="text" placeholder="" id="input-text-2b2">
+                           <p class="has-text-grey" style="margin-left: inherit;text-align: justify;">Il y a une transition entre chaque grande thèse, possiblement à la fin, qui synthétise la partie précédente et annonce la partie suivante<input class="input is-small has-background-white-bis" type="text" placeholder="" id="input-text-2b2">
                            </p>
                         </label>
                      </div>
@@ -298,7 +289,7 @@
                         <label for="switchExample3a1">
                            Il y a une synthèse
                            <div class="rating left"   id="13">  <div class="stars right" style="font-size: medium;">    <a class="star"  id="1"></a>    <a class="star"  id="2"></a>    <a class="star"  id="3"></a>    <a class="star"  id="4"></a>    <a class="star"  id="5"></a>  </div></div>
-                           <p class="has-text-grey" style="margin-left: inherit;">La conclusion commence par synthétiser le cheminement argumentatif de la dissertation, en soulignant les points forts et les limites rencontrées à chaque étape <input class="input is-small has-background-white-bis" type="text" placeholder="" id="input-text-3a1">
+                           <p class="has-text-grey" style="margin-left: inherit;text-align: justify;">La conclusion commence par synthétiser le cheminement argumentatif de la dissertation, en soulignant les points forts et les limites rencontrées à chaque étape <input class="input is-small has-background-white-bis" type="text" placeholder="" id="input-text-3a1">
                            </p>
                         </label>
                      </div>
@@ -310,7 +301,7 @@
                         <label for="switchExample3b1">
                            Il y a une réponse
                            <div class="rating left"   id="14">  <div class="stars right" style="font-size: medium;">    <a class="star"  id="1"></a>    <a class="star"  id="2"></a>    <a class="star"  id="3"></a>    <a class="star"  id="4"></a>    <a class="star"  id="5"></a>  </div></div>
-                           <p class="has-text-grey" style="margin-left: inherit;">La conclusion contient un moment distinct des potentiels autres, où une réponse au sujet est clairement et explicitement apportée <input class="input is-small has-background-white-bis" type="text" placeholder="" id="input-text-3b1">
+                           <p class="has-text-grey" style="margin-left: inherit;text-align: justify;">La conclusion contient un moment distinct des potentiels autres, où une réponse au sujet est clairement et explicitement apportée <input class="input is-small has-background-white-bis" type="text" placeholder="" id="input-text-3b1">
                            </p>
                         </label>
                      </div>
@@ -403,7 +394,7 @@ stars.forEach(function(star) {
     var totalVotes = calculateTotalVotes();
 // Mettez à jour la valeur de la note sur 20
     var noteElement = document.getElementById('note');
-    var noteValue = (totalVotes * 20) / 70;
+    var noteValue = (totalVotes * 20) / 65;
     var roundedNote = noteValue.toFixed(1); // Arrondir à 1 décimale
     noteElement.innerHTML = "Note indicative : <b>" + roundedNote + "/20 </b>";
 
@@ -427,6 +418,13 @@ function calculateTotalVotes() {
 
           
           
+      </script>
+      <script>
+        $('.js__action--print').click(function() {
+            $('#print').hide();
+            window.print();
+            return false;
+        });
       </script>
     <footer style="
     text-align: center;
